@@ -48,8 +48,8 @@ DataSage AI is a comprehensive Streamlit-based web application that transforms C
 
 1. **Clone the Repository**
 ```bash
-git clone <your-repository-url>
-cd datasage-ai
+git clone https://github.com/Harsh-codes-debug/AI-Agents.git
+cd DataSage AI
 ```
 
 2. **Install Dependencies**
