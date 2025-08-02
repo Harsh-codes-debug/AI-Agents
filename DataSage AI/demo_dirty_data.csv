@@ -1,0 +1,20 @@
+Name,Age,Department,Salary,Experience,Performance,Location,Email
+John Smith,28,Engineering,75000,3,8.5,New York,john.smith@company.com
+Sarah Johnson,,Marketing,68000,5,9.2,Los Angeles,sarah.johnson@company.com
+Mike Davis,29,Engineering,78000,4,7.8,,mike.davis@company.com
+Emily Brown,35,Sales,72000,7,8.9,Chicago,
+Alex Wilson,26,Engineering,65000,2,8.1,New York,alex.wilson@company.com
+Lisa Garcia,31,Marketing,70000,6,9.0,Boston,lisa.garcia@company.com
+David Miller,33,Sales,74000,8,,Miami,david.miller@company.com
+Jennifer Lee,27,Engineering,67000,3,8.7,Seattle,jennifer.lee@company.com
+Robert Taylor,30,Marketing,69000,5,8.3,Denver,robert.taylor@company.com
+Amanda Clark,29,Sales,71000,4,9.1,Phoenix,amanda.clark@company.com
+Tom Anderson,34,Engineering,80000,6,9.5,Portland,tom.anderson@company.com
+Maria Rodriguez,28,Sales,73000,4,8.8,Austin,maria.rodriguez@company.com
+Kevin White,31,Marketing,71500,5,8.6,Dallas,kevin.white@company.com
+Rachel Green,,Engineering,66000,2,8.3,San Francisco,rachel.green@company.com
+Steven Brown,35,Sales,76000,9,9.0,Atlanta,steven.brown@company.com
+Jennifer Lee,27,Engineering,67000,3,8.7,Seattle,jennifer.lee@company.com
+Mark Johnson,999,Sales,150000000,25,12.5,Unknown,invalid.email
+Test User,,-999,abc,xyz,N/A,,
+Amanda Clark,29,Sales,71000,4,9.1,Phoenix,amanda.clark@company.com

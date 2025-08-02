@@ -1,0 +1,2 @@
+# This would be a binary Excel file, but since we can't create binary files directly,
+# I'll create a Python script to generate it when the app starts

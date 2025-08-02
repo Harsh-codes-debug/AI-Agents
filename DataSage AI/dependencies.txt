@@ -1,0 +1,198 @@
+# DataSage AI - Complete Dependencies Guide
+
+## 🚀 Quick Installation (One Command)
+
+### Using pip (recommended):
+```bash
+pip install streamlit pandas numpy matplotlib seaborn scipy google-genai speechrecognition pyttsx3 reportlab weasyprint openpyxl
+```
+
+### Using uv (faster alternative):
+```bash
+uv add streamlit pandas numpy matplotlib seaborn scipy google-genai speechrecognition pyttsx3 reportlab weasyprint openpyxl
+```
+
+## 📦 Individual Package Details
+
+### Core Web Framework
+- **streamlit>=1.47.1** - Web application framework with chat interface support
+
+### Data Processing & Analysis
+- **pandas>=2.3.1** - Data manipulation and analysis
+- **numpy>=2.3.2** - Numerical computing and array operations
+- **scipy>=1.16.1** - Scientific computing and advanced statistics
+
+### Data Visualization
+- **matplotlib>=3.10.5** - Static plotting and chart generation
+- **seaborn>=0.13.2** - Statistical data visualization with enhanced aesthetics
+
+### AI & Machine Learning
+- **google-genai>=1.28.0** - Google Gemini AI integration for Live AI assistant
+- **scipy>=1.16.1** - Statistical computing for advanced data cleaning and outlier detection
+
+### Export & Reporting
+- **reportlab>=4.4.3** - Primary PDF report generation
+- **weasyprint>=66.0** - Alternative PDF generation (fallback)
+- **openpyxl>=3.1.5** - Excel file operations, multi-sheet exports, and XLSX file reading
+
+### Voice Processing (Optional)
+- **speechrecognition>=3.14.3** - Speech-to-text conversion
+- **pyttsx3>=2.99** - Text-to-speech engine
+
+## 🔧 Environment Setup
+
+### Required Environment Variables:
+```bash
+GEMINI_API_KEY=your_api_key_here
+```
+
+Get your free API key from: https://makersuite.google.com/app/apikey
+
+### Setting Environment Variables:
+
+#### Linux/macOS:
+```bash
+export GEMINI_API_KEY="your_api_key_here"
+```
+
+#### Windows:
+```cmd
+set GEMINI_API_KEY=your_api_key_here
+```
+
+#### Using .env file:
+```bash
+echo "GEMINI_API_KEY=your_api_key_here" > .env
+```
+
+## 🏃 Running the Application
+
+### Standard Run:
+```bash
+streamlit run app.py --server.port 5000
+```
+
+### With Custom Configuration:
+```bash
+streamlit run app.py --server.port 5000 --server.address 0.0.0.0 --server.headless true
+```
+
+### For Development:
+```bash
+streamlit run app.py --server.port 5000 --server.runOnSave true
+```
+
+## 🔍 Troubleshooting Installation
+
+### Common Installation Issues:
+
+#### Voice Libraries (speechrecognition, pyttsx3):
+```bash
+# If audio libraries fail, install system dependencies first:
+
+# Ubuntu/Debian:
+sudo apt-get install portaudio19-dev python3-pyaudio
+
+# macOS with Homebrew:
+brew install portaudio
+
+# Then retry pip install
+pip install speechrecognition pyttsx3
+```
+
+#### PDF Generation (weasyprint):
+```bash
+# If weasyprint fails, install system dependencies:
+
+# Ubuntu/Debian:
+sudo apt-get install python3-dev python3-pip python3-cffi python3-brotli libpango-1.0-0 libharfbuzz0b libpangoft2-1.0-0
+
+# macOS:
+brew install pango libffi
+```
+
+#### Alternative Installation Without Optional Packages:
+```bash
+# Minimum installation (without voice and advanced PDF):
+pip install streamlit pandas numpy matplotlib seaborn scipy google-genai openpyxl reportlab
+```
+
+## 🌐 Platform-Specific Instructions
+
+### Replit (Recommended):
+1. Dependencies are managed automatically via `pyproject.toml`
+2. Add `GEMINI_API_KEY` to Replit Secrets
+3. Click "Run" - no manual installation needed
+
+### Streamlit Cloud:
+1. Dependencies installed automatically from `pyproject.toml`
+2. Add `GEMINI_API_KEY` in app secrets
+3. Deploy with one click
+
+### Google Colab:
+```python
+!pip install streamlit pandas numpy matplotlib seaborn scipy google-genai openpyxl reportlab
+!streamlit run app.py --server.port 8501 &
+```
+
+### Docker:
+```dockerfile
+FROM python:3.11-slim
+
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+
+COPY . .
+EXPOSE 5000
+
+CMD ["streamlit", "run", "app.py", "--server.port", "5000", "--server.address", "0.0.0.0"]
+```
+
+## ✅ Verification Steps
+
+### Test Installation:
+```python
+# Test core packages
+python -c "import streamlit, pandas, numpy, matplotlib, seaborn, scipy; print('✅ Core packages OK')"
+
+# Test AI integration
+python -c "from google import genai; print('✅ Gemini AI available')"
+
+# Test export features
+python -c "import reportlab, openpyxl; print('✅ Export features available')"
+
+# Test voice features (optional)
+python -c "import speech_recognition, pyttsx3; print('✅ Voice features available')"
+```
+
+### Test Application:
+```bash
+# Start the app
+streamlit run app.py --server.port 5000
+
+# Check in browser: http://localhost:5000
+# Try loading demo dataset
+# Test AI assistant features
+```
+
+## 🚨 Important Notes
+
+### API Usage:
+- Gemini API has free tier limits
+- Monitor usage at Google AI Studio
+- Upgrade to paid tier for production use
+
+### Performance:
+- Large datasets (>100MB) may require more memory
+- Voice features work best in local environments
+- Cloud deployments may have limited audio support
+
+### Security:
+- Never commit API keys to version control
+- Use environment variables or secure secret storage
+- Regenerate compromised keys immediately
+
+---
+
+**Need help?** Check the complete setup guide in `SETUP.md` or open an issue on the repository.
