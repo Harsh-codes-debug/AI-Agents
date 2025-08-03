@@ -64,6 +64,8 @@ uv add streamlit pandas numpy matplotlib seaborn scipy google-genai speechrecogn
 ```
 
 3. **Set Up Environment Variables**
+Download Runtime for running - https://sourceforge.net/projects/gtk3win/
+   
 ```bash
 # Create .env file or set environment variable
 export GEMINI_API_KEY="your_gemini_api_key_here"
